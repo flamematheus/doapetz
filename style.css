@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Rose:wght@300..700&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway",sans-serif;
+  
+}
+html{
+    background-color: #fbfbfb;
+}
+
+.header{
+
+    padding: 32px;
+    background-color: #ff8800;
+    box-shadow: 0px 2px 10px #000;
+}
+.logomarca{
+    width: 12vw;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0  auto;
+}
+.links-navegacao{
+    display: flex;
+    list-style-type: none;
+
+}
+.links-navegacao li a{
+    padding: 0%;
+    margin: 16px;
+    color: #fbfbfb;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+.cadastrar a{
+    padding: 10;
+    background-color: #d1a520;
+    margin: 0%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+li.cadastrar a:hover{
+    font-size:1.4rem ;
+    padding:  13px;
+    background-color: rgb(255, 164, 8);
+    transition: 1.5;
+}
+
+.painel-Principal{
+    display:flex ;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 35px;
+    margin: 0% auto;
+    margin-bottom: 128px;
+    margin-top: 30px;
+   
+    
+}
+/* 
+.imagens-petz{
+    display:flex ;
+    justify-content: space-between;
+    padding: 100px;
+   
+ }   
+/* 
+.fotos-da-esquerda{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0% auto;
+    flex-direction:row ;
+
+}
+.fotos-da-direito{
+    display: flex;
+    justify-content: space-between;
+    align-items:;
+    flex-direction:column-reverse;
+} */
+ .anuncio{
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-direction:column;
+    color: #000;
+    width: 50%;
+    gap: 30px;
+ }
+ .titulo{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 4rem;
+    color: #33303e;
+    font-family: "Mochiy Pop One"sans-serif;
+ }
+
+ .texto{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 3rem;
+    color: #33303e;
+    font-family: "Mochiy Pop One"sans-serif;
+
+
+
+ }
+ .descricao{
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height:1rem ;
+    color: #4e4b59;
+ }
+ .botao-pricipal{
+    font-size: 19px;
+   font-family: "Mochiy Pop One"sans-serif;
+   padding: 16px 32px;
+   background-color: #ff950d;
+   color: #f5f5f5;
+   border-radius:10px  ;
+   border: 1px solid  #000;
+   cursor: pointer;
+   align-self: center;
+ }
+ .segunda-secao{
+    background-color:rgb(247, 222, 255);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+   
+ }
+ .cachorros{
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-direction:column;
+    color: #000;
+    margin-top: 3rem;
+    margin-right: 35px;
+    margin: 0% auto;
+ }
+ .botao-cachorro{
+
+    font-size: 19px;
+   font-family: "Mochiy Pop One"sans-serif;
+   padding: 16px 32px;
+   background-color: #ff950d;
+   color: #f5f5f5;
+   border-radius:10px  ;
+   border: 1px solid  #000;
+   cursor: pointer;
+   align-self: center;
+
+ }
+ .gatos{
+
+     display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-direction:column;
+    color: #000;
+    margin-top: 3rem;
+    margin-right: 35px;
+    margin: 0% auto;
+
+ }
+ .botao-gatinho{
+
+    font-size: 19px;
+   font-family: "Mochiy Pop One"sans-serif;
+   padding: 16px 32px;
+   background-color: #ff950d;
+   color: #f5f5f5;
+   border-radius:10px  ;
+   border: 1px solid  #000;
+   cursor: pointer;
+   align-self: center;
+
+ }
+.botao-hamster{ 
+    font-size: 19px;
+   font-family: "Mochiy Pop One"sans-serif;
+   padding: 16px 32px;
+   background-color: #ff950d;
+   color: #f5f5f5;
+   border-radius:10px  ;
+   border: 1px solid  #000;
+   cursor: pointer;
+   align-self: center;
+  
+}
+ .cachorros,.gatos,.hamster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+ }
+ .botao-cachorro,.botao-gatinho,.botao-hamster{
+    font-size: 19px;
+    font-family: "Mochiy Pop One"sans-serif;
+    padding: 15px 72px ;
+    background-color: #ff950d;
+    color: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ .terceira-secao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    
+    
+
+ }
+ .h2{
+    font-size: 2.5rem;
+    font-family: "Mochiy Pop One"sans-serif;
+
+ }
+ .conteudos{
+    display: flex;
+    gap: 200px;
+ }
+.depoimentos{
+    display: flex;
+    width: 25vw;
+    height: 200px;
+    background-color: #c3c2c7;
+    border-radius: 8px ;
+  
+
+ }
+ 
+.depoimento{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    margin-left: 20px;
+}
+
+.footer{
+    background-color:#ff950d;
+    
+    
+   
+}
+/*  
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    font-size: 1.5rem;
+    font-family: "Mochiy Pop One"sans-serif;
+}
+.sobre-nos{
+
+}
+ */
+.rodape{
+    background-color:#ff950d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 12px;
+    font-weight: 500;
+    width: 85%;
+
+}
+
+.lista ul{
+ 
+    font-family: "Mochiy Pop One"sans-serif;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+
+
+}
+.redes-socias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f5f5f5;
+    gap: 10px;
+
+}
+ .copyright{
+    padding-bottom: 16px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
