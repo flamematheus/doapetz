@@ -254,7 +254,7 @@ for(const chave in aluno){
     const valor = aluno[chave]
     console.log(`${chave}:${valor}`)
 }
-*/
+
 //estoque de produtos
 const estoque ={
     "notebook ":15,
@@ -275,3 +275,121 @@ for (const produto in estoque ){
         
     }
 }
+
+/// carrinho de compra para  ecommer ?
+
+
+ //array
+
+ const carrinho =[
+    {produto:"camiseta",preco:49.90,Quantidade:2},
+    {produto:"calça jeans",preco:129.90,Quantidade:2},
+    {produto:"tenis",preco:500.90,Quantidade:1},
+ ];
+
+ let total =0;
+
+ console.log("carrinho de compras : \n")
+
+ for (const item of carrinho ){
+    const subtotal=item.preco*item.Quantidade;
+
+    total += subtotal
+
+    console.log(`${item.produto} (${item.Quantidade}x)- R$v${subtotal.toFixed(2)}`)
+ }
+
+ console.log("\n"+"=".repeat(40));
+ console.log(`TOTAL :R$ ${total.toFixed(2)}`);
+ 
+
+ //break
+
+ const numeros =[5,12,8,3,19,7,25];
+const procurado = 19
+
+console.log("procurando o numero",procurado)
+
+for(const num of numeros){
+    console.log("varificando :",num)
+
+if (num ===procurado) {
+    console.log("encontrado!!")
+    break;
+    
+} 
+}
+console.log("loop deu certo")
+
+//senha com limite de 3 tentativas
+
+const senhacorreta = "acb123";
+
+const maxtentativas = 3
+
+for (let tentativa = 1 ;tentativa<=maxtentativas; tentativa++){
+    const senha = prompt(`Tentativa ${tentativa}/${maxtentativas}-digite sua senha :`)
+
+    if (senha === senhacorreta) {
+        console.log("Acesso Liberado !");
+        break;
+        
+    } else {
+        console.log("senha incorreta!");
+        if (tentativa=== maxtentativas) {
+        console.log("conta bloqueada !");
+
+        }
+        
+    }
+}
+
+
+//continue 
+
+for (let i =1;i <=10 ; i++){
+    if (i % 2 === 0) {
+        continue ;
+        
+    }
+    console.log(i)
+}
+
+
+const alunos = [ 
+    {nome:"ana", nota:8.5},
+    {nome:"bruno", nota:5.5},
+    {nome:"carlos", nota:9.5},
+    {nome:"diana", nota:4.5},
+    {nome:"luana", nota:7.5},
+];
+console.log("alunos Aprovados]\n");
+for(const aluno of alunos){
+    if (aluno.nota < 7) {
+        continue;  
+    }
+    console.log(`${aluno.nome} - nota : ${aluno.nota}`)
+}
+*/
+
+const frase =  prompt("digite uma frase :");
+
+const vogais = "AEIOUaeiou"
+
+let contador = 0;
+
+let vogaisencontradas = [];
+
+for (const letra of frase ){
+    if (vogais .includes(letra)){
+        vogaisencontradas.push(letra)
+        contador++
+        
+
+    }
+}
+console.log(`Frase:"${frase}"`);
+console.log(`vogais encontrada:${contador}`);
+console.log(`vogais encontrada:${vogaisencontradas}`);
+
+
