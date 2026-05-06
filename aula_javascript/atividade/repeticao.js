@@ -84,7 +84,7 @@ while (x < 5) {
 
 let y = 10 ;
 do {
-    console.lo ("isso vai aparecer uma vez ")
+    console.log ("isso vai aparecer uma vez ")
 } while (y < 5);
  
 

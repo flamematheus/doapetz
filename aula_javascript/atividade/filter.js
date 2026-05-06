@@ -232,8 +232,6 @@ const soma = numeros.reduce((acc,numero)=>{
  },1);
  console.log(soma)
 
- */
-
  const carrinho = [
     {produto :"mouse",preco:50},
     {produto :"teclado",preco:100},
@@ -246,4 +244,190 @@ const soma = numeros.reduce((acc,numero)=>{
 
 
 
+// contador de letras 
 
+
+const palavras = ["oi","jatascript","html"];
+
+const soma = palavras.reduce((acc,p)=>{
+    return acc + p.length;
+},0)
+console.log(soma)
+
+const numeros = [10,45,7,99,32]
+
+const soma = numeros.reduce((acc,numero)=>{
+    if (numero > acc) {
+        return numero;
+        
+    } 
+    return acc;
+
+},  numeros[0]);
+console.log(soma)
+
+const produtos = [
+    {nome:"mouse",preco :50},
+    {nome:"teclado",preco :200},
+    {nome:"monitor",preco :900},
+    {nome:"notebook",preco :3000},
+];
+
+
+const resultado = produtos.filter((produto)=>{
+    return produto.preco >100;
+})
+.map((produto)=>{
+    return produto.nome;
+});
+console.log(resultado)
+
+
+
+
+const filmes =  [
+    {nome:"vingadores",nota :9},
+    {nome:"batman",nota:7},
+    {nome:"dragon boll",nota:10},
+    {nome:"matrix",nota:8},
+];
+
+//use filter para pegar nota >=8
+
+const maiores = filmes.filter((person)=>{
+    return person.nota >=8;
+});
+console.log(maiores)
+
+//use map para pegar apenas nomes
+
+const resultado =filmes.map((produto)=>{
+    return produto.nome;
+});
+console.log(resultado)
+
+//use find para encontrar "batman"
+const nomes =filmes.find((person)=>{
+    return person.nome === "batman";
+}) 
+console.log(nomes);
+
+//use reduce para somar todas as notas
+const soma = filmes.reduce((acc,numero)=>{
+    return acc + numero.nota ;
+ },1);
+ console.log(soma)
+ 
+
+
+ //switch
+
+ const dia = 3;
+
+
+ switch (dia) {
+    case 1:
+        console.log("domingo");
+        break;
+    case 2:
+        console.log("segunda");
+        break;
+    case 3:
+        console.log("terça");
+        break;
+ 
+    default:
+        console.log("dia invalido!")
+        break;
+ }
+
+
+ //switch1
+ const n1 = 10;
+ const n2 = 5;
+ 
+ const operacao = "/";
+
+ switch (operacao) {
+    case "+":
+        console.log(n1+n2);
+        break;
+    case "-":
+        console.log(n1-n2);
+        break;
+    case "*":
+        console.log(n1*n2);
+        break;
+ 
+    case "/":
+        console.log(n1/n2);
+        break;
+    default:
+        console.log(" operção invalido!")
+        break;
+}
+
+ const nota = prompt("digite sua nota : A,B,C ou D");
+ 
+ switch (nota) {
+    case "A":
+        console.log("Excelente");
+        break;
+    case "B":
+        console.log("bom");
+        break;
+    case "C":
+        console.log("regular");
+        break;
+ 
+    case "D":
+        console.log("ruim");
+        break;
+    default:
+        console.log(" operção invalido!")
+        break;
+}
+*/
+//crie um sistema de menu de videogame:
+
+ let opcao;
+do {
+
+    opcao = Number(prompt(`
+
+        === menu ====
+        1 -> jogar
+        2 -> configurações
+        3 -> creditos
+        4 -> sair 
+        ============
+
+        `
+    ));
+  
+    switch (opcao) {
+    case 1:
+        console.log("🎮jogar: aperte start");
+        break;
+    case 2:
+        console.log("⚙️configurações");
+        break;
+    case 3:
+        console.log(" 😎😎😎 criado por matheus ");
+        break;
+ 
+    case 4:
+        console.log("🏃💨sair");
+        break;
+    default:
+        console.log("❎❎❎ operção invalido!")
+        break;
+}
+    
+} while (opcao !== 4);
+
+
+//1 jogar
+//2 configurações
+//3 creditos
+//4 sair 
